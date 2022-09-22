@@ -74,7 +74,7 @@ class Unitest(BaseModel):
                 self.data_in_source[schema][table] = data.count()
 
 
-    def get_data_in_destination(self):
+    def get_data_in_destination(self, mount):
         self.data_in_destination = {}
 
         for schema in self.data_in_source:
